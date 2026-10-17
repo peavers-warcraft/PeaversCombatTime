@@ -94,7 +94,7 @@ Download and install [PeaversUpdater](https://github.com/peavers-warcraft/Peaver
 
 ### Alternative: CurseForge
 
-1. Download from CurseForge
+1. Download from [CurseForge](https://www.curseforge.com/wow/addons/peaverscombattime)
 2. Ensure [PeaversCommons](https://www.curseforge.com/wow/addons/peaverscommons) is also installed
 3. Ensure [PeaversConfig](https://www.curseforge.com/wow/addons/peaversconfig) is also installed
 4. Enable the addon on the character selection screen
