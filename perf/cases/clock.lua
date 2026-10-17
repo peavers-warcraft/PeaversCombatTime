@@ -17,6 +17,12 @@
 -- number the budget has to hold against, not the flattering 144fps one.
 --------------------------------------------------------------------------------
 
+-- Not addon code: this runs in the harness's VM, outside WoW, against globals
+-- the runner injects. Linting it as a WoW addon is a category error -
+-- HARNESS_LIB and ADDON_DIR come from the runner, and the PeaversCommons table
+-- below is a deliberate three-function stub rather than the real library.
+---@diagnostic disable: undefined-global, deprecated, duplicate-set-field, missing-fields
+
 local Stubs = dofile(HARNESS_LIB .. "/wow-stubs.lua").Install()
 
 --------------------------------------------------------------------------------
