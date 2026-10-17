@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: PeaversCombatTime
+  description: "A World of Warcraft combat stopwatch. Times every fight - chain pulls, boss encounters, open world - and keeps the last few in a log so you can see which pulls are getting faster. No per-frame work outside combat."
+  annotations:
+    github.com/project-slug: peavers-warcraft/PeaversCombatTime
+spec:
+  type: library
+  lifecycle: production
+  owner: peavers-warcraft
