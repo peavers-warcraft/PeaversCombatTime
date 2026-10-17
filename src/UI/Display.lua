@@ -145,6 +145,8 @@ function Display:Layout(config, entries, unlocked)
     local frame = self.frame
     local width = config.frameWidth or 160
 
+    entries = entries or {}
+
     self.decimals = (config.decimals == 0) and 0 or 1
     self.config = config
 
@@ -196,7 +198,7 @@ function Display:Layout(config, entries, unlocked)
     -- is a one-line clock rather than a tall empty box waiting to be filled.
     local shown = 0
     if config.showLog ~= false then
-        shown = math.min(config.maxEntries or 5, entries and #entries or 0)
+        shown = math.min(config.maxEntries or 5, #entries)
     end
 
     local y = -(PAD + clockHeight)
@@ -312,9 +314,14 @@ function Display:RenderLog(entries)
     local config = self.config
     if not config then return end
 
+    -- Normalised once rather than tested at each use. "No log yet" and "a log
+    -- with nothing in it" draw the same thing, so they may as well be the same
+    -- value by the time the row loop reads it.
+    entries = entries or {}
+
     local shown = 0
     if config.showLog ~= false then
-        shown = math.min(config.maxEntries or 5, entries and #entries or 0)
+        shown = math.min(config.maxEntries or 5, #entries)
     end
 
     local logR, logG, logB = Color(config.logColor, { r = 0.8, g = 0.8, b = 0.84 })
