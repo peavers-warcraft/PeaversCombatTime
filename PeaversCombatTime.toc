@@ -3,7 +3,7 @@
 ## Title: |cff3abdf7Peavers|rCombatTime
 ## Notes: A combat stopwatch. Times every fight you are in - chain pulls, boss encounters, open world - and keeps the last few in a log underneath so you can see what is getting faster.
 ## Author: Peavers
-## Version: 1.0.2
+## Version: 1.0.3
 
 ## IconTexture: Interface\AddOns\PeaversCommons\src\Media\Icon.tga
 ## Category-enUS: Peavers
