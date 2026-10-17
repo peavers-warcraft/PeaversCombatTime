@@ -10,6 +10,7 @@
 
 ## X-Website: https://peavers.io
 ## X-Source-Code: https://github.com/peavers-warcraft/PeaversCombatTime
+## X-Curse-Project-ID: 1750990
 
 ## Dependencies: PeaversCommons, PeaversConfig
 ## SavedVariables: PeaversCombatTimeDB, PeaversCombatTimeLog
