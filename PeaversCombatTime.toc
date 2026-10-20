@@ -1,4 +1,4 @@
-## Interface: 11509, 16001, 20506, 50504, 120001, 120005, 120007, 120100
+## Interface: 11509, 16001, 20506, 50504, 120001, 120005, 120007, 120100, 120105
 
 ## Title: |cff3abdf7Peavers|rCombatTime
 ## Notes: A combat stopwatch. Times every fight you are in - chain pulls, boss encounters, open world - and keeps the last few in a log underneath so you can see what is getting faster.
